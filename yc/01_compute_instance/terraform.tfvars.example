@@ -1,0 +1,27 @@
+#------------------------------------------------
+# Variables for connect to Providers
+#------------------------------------------------
+
+key_file = ""
+cloud_id = ""
+folder_id = ""
+zone_id = ""
+
+
+#------------------------------------------------
+# Variables for yandex_compute_instance
+#------------------------------------------------
+
+vps_count = 1
+platform_id = "standard-v1"
+zone = "ru-central1-a"
+image_id = ""
+instance_fraction = 5
+instance_cores = 2
+instance_memory = 2
+instance_preemptible = "true"
+disk_size = 15
+ssh_keys = ""
+task_name = ""
+user_email = ""
+lab-subnet-a = ""
