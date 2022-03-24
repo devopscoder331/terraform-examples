@@ -90,7 +90,7 @@ variable "task_name" {
 
 variable "user_email" {
     description = "user_email"
-    tyep = string
+    type = string
   
 }
 
