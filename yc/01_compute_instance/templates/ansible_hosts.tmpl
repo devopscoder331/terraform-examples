@@ -1,0 +1,8 @@
+%{ for index, name in vps ~}
+${vps_name[index]} ansible_user=${ansible_user} ansible_host=${vps_nat_ip[index]} ansible_ssh=${ansible_ssh[index]}
+%{ endfor ~}
+
+[name_group]
+%{ for index, name in vps ~}
+${vps_name[index]}
+%{ endfor ~}

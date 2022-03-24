@@ -49,53 +49,54 @@ variable "image_id" {
 variable "instance_fraction" {
     description = "If provided, specifies baseline performance for a core as a percent."
     type = string
-  
 }
 
 variable "instance_cores" {
     description = "CPU cores for the instance"
     type = string
-  
 }
 
 variable "instance_memory" {
     description = "Memory size in GB"
     type = string
-  
 }
 
 variable "instance_preemptible" {
     description = "Specifies if the instance is preemptible. Defaults to false."
     type = string
-  
 }
 
 variable "disk_size" {
     description = "Size of the disk in GB."
     type = string
-  
 }
 
-variable "ssh_keys" {
-    description = "value"
+variable "ssh_private_key" {
+    description = "ssh_private_key for ansible installations"
     type = string
-  
+}
+
+variable "ssh_public_key" {
+    description = "ssh_public_key for ansible installations"
+    type = string
+}
+
+variable "ssh_user" {
+    description = "ssh_user who use for for ansible installations"
+    type = string
 }
 
 variable "task_name" {
     description = "task_name"
     type = string
-  
 }
 
 variable "user_email" {
     description = "user_email"
     type = string
-  
 }
 
 variable "lab-subnet-a" {
     description = "ID of the subnet to attach this interface to. The subnet must exist in the same zone where this instance will be created"
     type = string
-  
 }
